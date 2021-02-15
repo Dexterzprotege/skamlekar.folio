@@ -1,5 +1,5 @@
 module.exports = {
-  pathPrefix: "https://github.com/Dexterzprotege/skamlekar.folio/",
+  pathPrefix: "/skamlekar.folio",
   siteMetadata: {
     title: `Lewis Gatsby Starter Blog`,
     description: `A custom Gatsby starter template to start a blog or personal website.`,

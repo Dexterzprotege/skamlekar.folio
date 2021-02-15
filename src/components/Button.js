@@ -7,7 +7,7 @@ export const Button = styled.a`
   border-radius: 100px;
   color: var(--accent-color);
   display: flex;
-  font-size: 26px;
+  font-size: 16px;
   font-weight: bold;
   justify-content: center;
   margin: 10vh auto 5vh auto;

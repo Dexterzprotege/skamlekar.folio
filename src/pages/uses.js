@@ -11,13 +11,14 @@ import {
 } from "../components"
 import { } from 'react-bootstrap'
 
-export default function About({data}) {
+export default function Uses({data}) {
   return (
     <>
-      <SEO title="About" />
+      <SEO title="Uses" />
       <HeaderBack />
       <Layout>
-        <HeadingXL>About</HeadingXL>
+        <HeadingXL>Uses</HeadingXL>
+        <TextBody>This is my uses section, following are all the softwares/hardwares and peripherals I use in day to day life</TextBody>
         <Image fluid={data.RandomPhoto.childImageSharp.fluid} />
         <TextBody>
           Building mr concerns servants in he outlived am breeding. He so lain
@@ -42,7 +43,7 @@ export default function About({data}) {
 
 export const data = graphql`
   query {
-    RandomPhoto: file(relativePath: {eq: "assets/images/pic.png"}) {
+    RandomPhoto: file(relativePath: {eq: "assets/images/img.png"}) {
       childImageSharp {
         fluid(maxWidth: 1400) {
           ...GatsbyImageSharpFluid_withWebp

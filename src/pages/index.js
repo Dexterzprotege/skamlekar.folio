@@ -1,15 +1,7 @@
 import React from "react"
 import {Link, graphql} from "gatsby"
 import styled from "styled-components"
-import {
-  HeaderLogo,
-  HeadingXL,
-  HeadingL,
-  Layout,
-  SEO,
-  TextBody,
-  TextDate,
-} from "../components"
+import { HeaderLogo, HeadingXL, HeadingL, Layout, SEO, TextBody, TextDate, HeaderBack, Button } from "../components"
 import {BREAKPOINT} from "../utils/constants"
 
 const Hero = styled.div`
@@ -47,17 +39,18 @@ const Post = styled.div`
 export default function Home({data}) {
   return (
     <>
-      <SEO title="Blog" />
+      <SEO title="Portfolio" />
       <HeaderLogo />
       <Layout>
         <Hero>
-          <HeadingXL>Lewis Gatsby Starter Blog</HeadingXL>
+          <HeadingXL>Bonjour!</HeadingXL>
           <TextHome>
-            This is a custom Gatsby starter template to start a new blog or
-            personal website.
+            My name is <strong>Sharath Kamlekar</strong> and I currently work at Amazon as a Developer. I previously interned at Amazon too. My primary interests are full-stack web development and like to explore new JS frameworks. My personal interest is in Data Science, Data Analytics which I am pursuing independently.
           </TextHome>
+          <Button href="mailto:sharath.kamlekar&#64;outlook.com">Get in touch</Button>
         </Hero>
-        {data.allMarkdownRemark.edges.map(({node}) => (
+        
+        {/* {data.allMarkdownRemark.edges.map(({node}) => (
           <Link to={node.fields.slug} key={node.id}>
             <Post>
               <HeadingL>{node.frontmatter.title}</HeadingL>
@@ -65,7 +58,7 @@ export default function Home({data}) {
               <TextDate>{node.frontmatter.date}</TextDate>
             </Post>
           </Link>
-        ))}
+        ))} */}
       </Layout>
     </>
   )
